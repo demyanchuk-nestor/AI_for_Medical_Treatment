@@ -12,7 +12,7 @@ from nltk.draw.util import CanvasFrame
 from nltk.draw import TreeWidget
 import svgling
 import pickle
-from NegBio.negbio.pipeline import text2bioc
+from negbio.pipeline import text2bioc
 import bioc
 import itertools
 from textblob import TextBlob
@@ -21,15 +21,15 @@ import os
 import bioc
 import tqdm
 from pathlib2 import Path
-from NegBio.negbio.chexpert.stages.aggregate import NegBioAggregator
-from NegBio.negbio.chexpert.stages.classify import ModifiedDetector, CATEGORIES
-from NegBio.negbio.chexpert.stages.extract import NegBioExtractor
-from NegBio.negbio.chexpert.stages.load import NegBioLoader
-from NegBio.negbio.pipeline import text2bioc, negdetect
-from NegBio.negbio.pipeline.parse import NegBioParser
-from NegBio.negbio.pipeline.ptb2ud import NegBioPtb2DepConverter, Lemmatizer
-from NegBio.negbio.pipeline.ssplit import NegBioSSplitter
-from NegBio.negbio.main_chexpert import pipeline
+from negbio.chexpert.stages.aggregate import NegBioAggregator
+from negbio.chexpert.stages.classify import ModifiedDetector, CATEGORIES
+from negbio.chexpert.stages.extract import NegBioExtractor
+from negbio.chexpert.stages.load import NegBioLoader
+from negbio.pipeline import text2bioc, negdetect
+from negbio.pipeline.parse import NegBioParser
+from negbio.pipeline.ptb2ud import NegBioPtb2DepConverter, Lemmatizer
+from negbio.pipeline.ssplit import NegBioSSplitter
+from negbio.main_chexpert import pipeline
 
 PARSING_MODEL_DIR = "~/.local/share/bllipparser/GENIA+PubMed"
 CHEXPERT_PATH = "NegBio/negbio/chexpert/"
