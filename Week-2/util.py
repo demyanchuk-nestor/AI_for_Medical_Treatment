@@ -32,7 +32,7 @@ from negbio.pipeline.ssplit import NegBioSSplitter
 from negbio.main_chexpert import pipeline
 
 PARSING_MODEL_DIR = "~/.local/share/bllipparser/GENIA+PubMed"
-CHEXPERT_PATH = "NegBio/negbio/chexpert/"
+CHEXPERT_PATH = "negbio/chexpert/"
 MENTION_PATH =f"{CHEXPERT_PATH}phrases/mention"
 UNMENTION_PATH = f"{CHEXPERT_PATH}phrases/"
 NEG_PATH = f'{CHEXPERT_PATH}patterns/negation.txt'
